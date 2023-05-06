@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+$color-primary: #00175A;
+$color-light: #F6F7F8;
+$color-white: #FFFFFF;
+$color-secondary: #FDB92D;
+$transition: all 0.3s ease;
+$border-radius: 25px;
+$font-family: 'Montserrat', sans-serif;
+
+// base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.banner {
+  height: 446px;
+}
+
+content {
+  width: 50%;
+  flex: 1;
+}
+
+.image {
+  height: 446px;
+  flex: 1;
+}
+
+// header
+header {
+  width: 100%;
+  color: $color-primary;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  background-color: $color-light;
+  padding: 24px 46px;
+
+
+  h2 {
+    font-size: 28px;
+    line-height: 30px;
+    border-right: 2px solid $color-primary;
+    padding-right: 16px;
+    margin-right: 16px;
+  }
+}
+
+// main
+main {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 79px 46px  52px;
+  height: calc(100% - 109px);
+
+  p {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 28px;
+  }
+}
+
+.title {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 12px;
+}
+
+.content-header-span {
+  display: inline-block;
+  background-color: $color-secondary;
+  color: $color-primary;
+  padding: 4px 16px;
+  border-radius: $border-radius;
+  margin-bottom: 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content-footer-span {
+  color: $color-secondary;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  margin: 0;
+  max-height: 446px;
+  max-width: 50%;
+  overflow: hidden;
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
