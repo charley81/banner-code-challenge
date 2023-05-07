@@ -91,4 +91,24 @@ main p {
   object-fit: contain;
 }
 
+.sale {
+  padding: 16px 32px;
+  color: #FFFFFF;
+  background: rgba(0, 23, 90, 0.4);
+  position: absolute;
+  right: 0;
+  top: 20%;
+  text-align: right;
+}
+.sale p {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.sale h1 {
+  font-size: 132px;
+  line-height: 132px;
+}
+
 /*# sourceMappingURL=style.css.map */
