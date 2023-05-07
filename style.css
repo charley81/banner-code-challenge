@@ -73,6 +73,7 @@ main p {
 
 .content-footer-span {
   color: #FDB92D;
+  cursor: pointer;
 }
 
 .image {

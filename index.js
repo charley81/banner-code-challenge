@@ -1,6 +1,7 @@
 let jsonData;
 const price = document.querySelector(".price");
-const subscibe = document.querySelector(".content-footer-span");
+const subscribeLink = document.querySelector(".content-footer-span");
+const subscribeText = document.querySelector(".subscribe-text");
 
 // get local json data
 async function getData(url) {
@@ -13,7 +14,11 @@ async function getData(url) {
   } else {
     price.textContent = "$119";
   }
-  console.log(data.isOfferActive);
 }
 
 getData("./data/index.json");
+
+// handle subscribe click
+subscribeLink.addEventListener("click", () => {
+  subscribeText.textContent = "Thank you for subscribing!";
+});
